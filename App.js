@@ -1,11 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Gallery from './Gallery';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>Tour Comparison</h1>
+      <img src={`${process.env.PUBLIC_URL}/plane.jpg`} alt="Plane" className="plane-image" />
+      <h1>Tour Comparison App</h1>
       <Gallery />
     </div>
   );
